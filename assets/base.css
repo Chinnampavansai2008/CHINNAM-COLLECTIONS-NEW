@@ -3635,3 +3635,95 @@ details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
+
+/* ==========================================================================
+   CHINNAM COLLECTIONS — Brand Design System & Micro-Interactions
+   ========================================================================== */
+
+:root {
+  /* Brand Core Tokens */
+  --chinnam-maroon: #7A273A;
+  --chinnam-maroon-dark: #631D2D;
+  --chinnam-maroon-light: #943349;
+  --chinnam-gold: #D4AF37;
+  --chinnam-gold-light: #F3E5AB;
+  --chinnam-ivory: #FAF8F5;
+  --chinnam-white: #FFFFFF;
+  --chinnam-charcoal: #1A1A1A;
+  --chinnam-border-subtle: rgba(122, 39, 58, 0.12);
+
+  /* Spacing & Elevation */
+  --chinnam-radius-sm: 4px;
+  --chinnam-radius-md: 6px;
+  --chinnam-radius-lg: 10px;
+  --chinnam-shadow-soft: 0 4px 16px rgba(122, 39, 58, 0.08);
+  --chinnam-shadow-hover: 0 8px 24px rgba(122, 39, 58, 0.14);
+  --chinnam-transition-smooth: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Accessible Global Focus States */
+:focus-visible {
+  outline: 2px solid var(--chinnam-maroon) !important;
+  outline-offset: 2px !important;
+}
+
+/* Typography Hierarchy & Indian Luxury Polish */
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  letter-spacing: 0.02em;
+}
+
+/* Luxury Button Transitions & Elevating Hover */
+.button,
+.shopify-challenge__button,
+.customer button,
+button.shopify-payment-button__button--unbranded {
+  transition: var(--chinnam-transition-smooth);
+}
+
+.button:not([disabled]):hover,
+.customer button:not([disabled]):hover,
+button.shopify-payment-button__button--unbranded:not([disabled]):hover {
+  transform: translateY(-1px);
+  box-shadow: var(--chinnam-shadow-soft);
+}
+
+.button--secondary:hover {
+  border-color: var(--chinnam-maroon);
+}
+
+/* Subtle Link Underline Animation */
+.link:hover {
+  color: var(--chinnam-maroon);
+}
+
+/* Product Card Refinements */
+.card-wrapper {
+  transition: var(--chinnam-transition-smooth);
+}
+
+.card-wrapper:hover {
+  box-shadow: var(--chinnam-shadow-soft);
+}
+
+.card--standard.card--media .card__inner .card__media {
+  overflow: hidden;
+  border-radius: var(--chinnam-radius-md);
+}
+
+.card-wrapper:hover .card__media img {
+  transform: scale(1.03);
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Badges Polish */
+.badge {
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Selection Highlight */
+::selection {
+  background-color: var(--chinnam-gold-light);
+  color: var(--chinnam-charcoal);
+}
