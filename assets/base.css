@@ -3637,7 +3637,7 @@ details-disclosure > details {
 }
 
 /* ==========================================================================
-   CHINNAM COLLECTIONS — Brand Design System & Micro-Interactions
+   CHINNAM COLLECTIONS ï¿½ Brand Design System & Micro-Interactions
    ========================================================================== */
 
 :root {
@@ -3729,7 +3729,7 @@ button.shopify-payment-button__button--unbranded:not([disabled]):hover {
 }
 
 /* ==========================================================================
-   CHINNAM COLLECTIONS — Header, Announcement Bar & Navigation Refinements
+   CHINNAM COLLECTIONS ï¿½ Header, Announcement Bar & Navigation Refinements
    ========================================================================== */
 
 /* 1. High-Contrast Accessible Focus Indicators */
@@ -3977,8 +3977,4 @@ button.shopify-payment-button__button--unbranded:not([disabled]):hover {
   color: var(--chinnam-maroon-dark) !important;
 }
 
-/* Ensure no horizontal overflow anywhere */
-html, body {
-  overflow-x: hidden;
-  max-width: 100vw;
-}
+
